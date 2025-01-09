@@ -54,6 +54,7 @@ section h1, section h2, section h3, p {
     align-items: center;
     margin: 1rem auto;
     max-width: 1200px;
+    background-color: #2a2a2a;
 }
 
 .projet-widget {
@@ -62,11 +63,14 @@ section h1, section h2, section h3, p {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
+    background-color: #333; /* Fond des widgets */
+    color: #f5f5f5; /* Couleur du texte */
 }
 
 .projet-widget:hover {
     transform: translateY(-5px); /* Légère élévation au survol */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #444;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .projet-widget img {
@@ -80,10 +84,13 @@ section h1, section h2, section h3, p {
     transform: scale(0.8); /* Augmente légèrement la taille */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour plus d'impact */
     transition: transform 0.3s, box-shadow 0.3s; /* Effet interactif */
+    background-color: #3a3a3a;
+    color: #f5f5f5;
 }
 
 .projet-highlight:hover {
-    transform: scale(0.87);
+    transform: scale(0.84);
+    background-color: #4a4a4a;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
 }
 
@@ -91,25 +98,33 @@ section h1, section h2, section h3, p {
 .projet-widget a {
     display: block; /* Permet de cliquer sur tout le widget */
     text-decoration: none; /* Supprime le soulignement */
-    color: #000; /* Définit une couleur de texte personnalisée (noir ici) */
+    color: #f5f5f5;; /* Définit une couleur de texte personnalisée (noir ici) */
     transition: color 0.3s, transform 0.3s; /* Ajoute une transition pour un effet interactif */
 }
 
 /* Effet au survol */
 .projet-widget a:hover {
-    color: #000; /* Change la couleur du texte au survol (bleu ici, personnalise si besoin) */
+    color: #f5f5f5;; /* Change la couleur du texte au survol (bleu ici, personnalise si besoin) */
 }
 
 .projet-widget b {
     display: block; /* Permet de cliquer sur tout le widget */
     text-decoration: none; /* Supprime le soulignement */
-    color: #000; /* Définit une couleur de texte personnalisée (noir ici) */
+    color: #f5f5f5; /* Définit une couleur de texte personnalisée (noir ici) */
     transition: color 0.3s, transform 0.3s; /* Ajoute une transition pour un effet interactif */
 }
 
 /* Effet au survol */
 .projet-widget b:hover {
     color: #000; /* Change la couleur du texte au survol (bleu ici, personnalise si besoin) */
+}
+
+a {
+    color: #f5f5f5;
+}
+
+a:hover {
+    color: #00bcd4; /* Couleur bleu clair au survol */
 }
 
 main {

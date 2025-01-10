@@ -5,15 +5,33 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 60px;
     line-height: 1.4; /* Réduction de l'espacement vertical */
 }
 
-/* Header */
+
 header {
+    position: fixed; /* Fixe le header en haut de la page */
+    top: 0; /* Aligne le header en haut */
+    left: 0; /* Aligne le header à gauche */
+    width: 100%; /* Fait en sorte que le header couvre toute la largeur de la page */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background: #333;
-    color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    height: 60px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f5f5f5;
 }
 
 header nav ul {
@@ -21,7 +39,18 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.2rem;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1; /* Permet au menu de prendre tout l'espace restant */
+    justify-content: center; /* Centre les éléments du menu */
+    position : absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* position: relative;
+    z-index: 1000; */
 }
 
 header nav ul li a {
@@ -55,6 +84,7 @@ section h1, section h2, section h3, p {
     margin: 1rem auto;
     max-width: 1200px;
     background-color: #2a2a2a;
+    /*font-size: 1.5rem;*/
 }
 
 .projet-widget {
@@ -86,6 +116,7 @@ section h1, section h2, section h3, p {
     transition: transform 0.3s, box-shadow 0.3s; /* Effet interactif */
     background-color: #3a3a3a;
     color: #f5f5f5;
+    font-size: 1.5rem;
 }
 
 .projet-highlight:hover {
@@ -119,6 +150,121 @@ section h1, section h2, section h3, p {
     color: #000; /* Change la couleur du texte au survol (bleu ici, personnalise si besoin) */
 }
 
+/* Style général pour la description */
+.projet-highlight-details {
+    font-size: 1.8rem; /* Taille du texte */
+    margin-top: 0.5rem; /* Espacement au-dessus */
+    color: #f5f5f5; /* Couleur par défaut */
+}
+
+/* Couleur spécifique pour le moteur de jeu */
+.projet-highlight-details .engine {
+    color: #13fe00; /* Bleu pour Unity, par exemple */
+    font-weight: bold; /* Gras pour accentuer */
+}
+
+/* Couleur spécifique pour le langage de programmation */
+.projet-highlight-details .language {
+    color: #ff4d4d; /* Rouge pour C#, par exemple */
+    font-weight: bold; /* Gras pour accentuer */
+}
+
+/* Style général pour la description */
+.projet-details {
+    font-size: 1.2rem; /* Taille du texte */
+    margin-top: 0.35rem; /* Espacement au-dessus */
+    color: #f5f5f5; /* Couleur par défaut */
+}
+
+/* Couleur spécifique pour le moteur de jeu */
+.projet-details .engine {
+    color: #52bbf7; /* Bleu pour Unity, par exemple */
+    font-weight: bold; /* Gras pour accentuer */
+}
+
+.projet-details .unity {
+    color: #13fe00; /* Bleu pour Unity, par exemple */
+    font-weight: bold; /* Gras pour accentuer */
+}
+
+/* Couleur spécifique pour le langage de programmation */
+.projet-details .language {
+    color: #ff4d4d; /* Rouge pour C#, par exemple */
+    font-weight: bold; /* Gras pour accentuer */
+}
+
+/* Style général pour les liens du menu */
+.menu > li > a {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color: #f5f5f5;
+    display: flex; /* Aligne tous les boutons de la même manière */
+    align-items: center; /* Centre verticalement le texte et les icônes (comme la flèche) */
+    justify-content: center; /* Centre horizontalement le texte */
+    transition: background-color 0.3s;
+}
+
+/* Flèche */
+.arrow {
+    font-size: 1.2rem; /* Taille de la flèche */
+    margin-left: 0.5rem; /* Espacement entre le texte et la flèche */
+    color: #f5f5f5;
+    transition: transform 0.3s; /* Animation de rotation */
+}
+
+/* Rotation de la flèche au survol */
+.dropdown:hover .arrow {
+    transform: rotate(180deg); /* La flèche pointe vers le haut */
+}
+
+/* Menu principal */
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #1a1a1a; /* Fond du menu */
+    position: relative;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Positionné sous le bouton "Projets" */
+    left: 0;
+    display: none;
+    background-color: #2a2a2a;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    color: #f5f5f5;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #444;
+}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
 a {
     color: #f5f5f5;
 }
@@ -136,6 +282,7 @@ main {
     min-height: 100vh;
     padding: 1rem;
     box-sizing: border-box;
+    margin-top: 60px; /* Compense la hauteur du header fixé */    
 }
 
 /* Vidéo : Centrée avec des marges équilibrées */
@@ -143,6 +290,13 @@ video {
     width: 100%;
     max-width: 800px;
     margin: 1rem auto; /* Centrage horizontal et réduction des marges */
+}
+
+hr{
+    border: none;
+    border-top: 1.5px solid #f5f5f5;
+    margin: 2rem 0;
+    width: 100%;
 }
 
 /* Footer */

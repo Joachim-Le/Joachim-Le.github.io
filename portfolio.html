@@ -7,52 +7,93 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#accueil">Home</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
-    <section id="accueil">
+    <header>
+
+        <div class="logo">
+            <a href="portfolio.html"> <span>Joachim Legrand - Portfolio</span></a>
+        </div>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="portfolio.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Projects<span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projet-rush.html">Relaxed Rush</a></li>
+                        <li><a href="projet-sokoban.html">Rockoban</a></li>
+                        <li><a href="projet-obg.html">Blasting Cars</a></li>
+                        <li><a href="projet-shmup.html">Steam Crusher</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- <section id="accueil">
         <h1>Bienvenue sur mon portfolio</h1>
         <p>Je suis Joachim Legrand, un Gameplay Programmer passionné.</p>
-    </section>
+    </section> -->
+    
+    <hr>
 
     <section id="apropos">
-        <h2>À propos de moi</h2>
-        <p>Je suis spécialisé dans le développement de systèmes de gameplay, avec une passion pour les moteurs Unity et Godot.</p>
+        <h2>About me</h2>
+        <p>Hello, I'm Joachim Legrand.I am currently studying Game Design & Programming at ISART Digital Paris, in order to become Gameplay Programmer.<br>
+            I have advanced skills in using game engines such as Unity or Godot, mainly programming in C#. <br>
+            Below are the projects I have worked on, with details about what I worked on in these games.
+        </p>
     </section>
     
+    <hr>
+
     <section id="projets">
-        <h2>Mes Projets</h2>
+        <h2>Projects</h2>
         <div class="projets-container">
             <div class="projet-widget projet-highlight">
-                <a href="projet.html">
-                    <img src="Pictures/RockobanTitleScreen.png" alt="Aperçu du projet 1">
-                    <h3>Rockoban</h3>
+                <a href="projet-rush.html">
+                    <img src="Pictures/RushTitlescreen.png" alt="Aperçu du projet 1">
+                    <h3>Relaxed Rush</h3>
+                    <p class="projet-highlight-details">
+                        <span class="engine">Unity</span> - <span class="language">C#</span>
+                    </p>
                 </a>
             </div>
             <div class="projet-widget">
-                <a href="projet2.html">
-                    <img src="Pictures/BlastingCarsTitleCard.png" alt="Aperçu du projet 2">
+                <a href="projet-sokoban.html">
+                    <img src="Pictures/RockobanTitleScreen.png" alt="Aperçu du projet 2">
+                    <h3>Rockoban</h3>
+                    <p class="projet-details">
+                        <span class="engine">Godot</span> - <span class="language">C#</span>
+                    </p>
+                </a>
+            </div>
+            <div class="projet-widget">
+                <a href="projet-obg.html">
+                    <img src="Pictures/BlastingCarsTitleCard.png" alt="Aperçu du projet 3">
                     <h3>Blasting Cars</h3>
+                    <p class="projet-details">
+                        <span class="engine">Godot</span> - <span class="language">C#</span>
+                    </p>
                 </a>
             </div>
             <div class="projet-widget">
-                <a href="projet3.html">
-                    <img src="Pictures/RockobanTitleScreen.png" alt="Aperçu du projet 3">
-                    <h3>Rockoban</h3>
-                </a>
-            </div>
-            <div class="projet-widget">
-                <a href="projet4.html">
-                    <img src="Pictures/RockobanTitleScreen.png" alt="Aperçu du projet 4">
-                    <h3>Rockoban</h3>
+                <a href="projet-shmup.html">
+                    <img src="Pictures/ShmupTitlescreen.png" alt="Aperçu du projet 4">
+                    <h3>Steam Crusher</h3>
+                    <p class="projet-details">
+                        <span class="engine">Godot</span> - <span class="language">C#</span>
+                    </p>
                 </a>
             </div>
         </div>
@@ -60,9 +101,9 @@
     
     <section id="contact">
         <h2>Contact</h2>
-        <p> Contact : <a href="joachimlegrand64@gmail.com">Email</a></p>
+        <p> Contact : <a href="mailto:joachimlegrand64@gmail.com">joachimlegrand64@gmail.com</a> | <a href="https://www.linkedin.com/in/joachim-legrand-193912334/">LinkedIn</a></p>
     </section>
-
+    
     <footer>
         <p>© 2025 Joachim Legrand </p>
     </footer>

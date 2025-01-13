@@ -68,10 +68,15 @@ section {
     min-height: 20vh; /* Réduction de la hauteur minimale */
     padding: 1rem;
     box-sizing: border-box;
+    font-size: large;
 }
 
 section h1, section h2, section h3, p {
     margin: 0.5rem 0; /* Réduction des marges */
+}
+
+.about-me {
+    font-size: large;
 }
 
 /* Projets */
@@ -187,10 +192,19 @@ section h1, section h2, section h3, p {
     font-weight: bold; /* Gras pour accentuer */
 }
 
+.projet-details .godot {
+    color: #52bbf7; /* Bleu pour Unity, par exemple */
+    font-weight: bold; /* Gras pour accentuer */
+}
+
 /* Couleur spécifique pour le langage de programmation */
 .projet-details .language {
     color: #ff4d4d; /* Rouge pour C#, par exemple */
     font-weight: bold; /* Gras pour accentuer */
+}
+
+.projet-contributions {
+    font-size: large;
 }
 
 /* Style général pour les liens du menu */
@@ -264,6 +278,13 @@ section h1, section h2, section h3, p {
     display: block;
 }
 
+.contribution-title {
+    text-decoration: underline;
+}
+
+.contribution-description {
+    text-decoration: none;
+}
 
 a {
     color: #f5f5f5;
@@ -272,6 +293,19 @@ a {
 a:hover {
     color: #00bcd4; /* Couleur bleu clair au survol */
 }
+
+/* Styles pour les listes */
+ul {
+    list-style-position:inside; /* Place les puces à l'intérieur du conteneur */
+    margin: 0; /* Supprime les marges par défaut */
+    padding-left: 1.5rem; /* Définit un espacement uniforme pour l'indentation */
+}
+
+li {
+    text-indent: 0; /* Assure que le texte ne soit pas décalé */
+    margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
+}
+
 
 main {
     display: flex;

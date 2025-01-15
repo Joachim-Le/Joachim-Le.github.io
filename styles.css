@@ -203,10 +203,6 @@ section h1, section h2, section h3, p {
     font-weight: bold; /* Gras pour accentuer */
 }
 
-.projet-contributions {
-    font-size: large;
-}
-
 /* Style général pour les liens du menu */
 .menu > li > a {
     text-decoration: none;
@@ -278,12 +274,28 @@ section h1, section h2, section h3, p {
     display: block;
 }
 
+.student-number-time {
+    color: #f99910;
+}
+
+.projet-contributions {
+    font-size: large;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.projet-description {
+    margin-bottom: 1rem;
+}
+
 .contribution-title {
     text-decoration: underline;
 }
 
 .contribution-description {
     text-decoration: none;
+    margin-left: 2rem;
+    display: block;
 }
 
 a {

@@ -1,20 +1,19 @@
-/* Styles de base */
 body {
-    background-color: #1a1a1a; /* Gris foncé presque noir */
-    color: #f5f5f5; /* Texte en gris clair pour un bon contraste */
+    background-color: #1a1a1a;
+    color: #f5f5f5;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 60px;
-    line-height: 1.4; /* Réduction de l'espacement vertical */
+    line-height: 1.4;
 }
 
 
 header {
-    position: fixed; /* Fixe le header en haut de la page */
-    top: 0; /* Aligne le header en haut */
-    left: 0; /* Aligne le header à gauche */
-    width: 100%; /* Fait en sorte que le header couvre toute la largeur de la page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background: #333;
@@ -44,13 +43,11 @@ header nav ul {
 
 nav {
     display: flex;
-    flex-grow: 1; /* Permet au menu de prendre tout l'espace restant */
-    justify-content: center; /* Centre les éléments du menu */
-    position : absolute;
+    flex-grow: 1;
+    justify-content: center;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    /* position: relative;
-    z-index: 1000; */
 }
 
 header nav ul li a {
@@ -58,21 +55,23 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Sections */
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 20vh; /* Réduction de la hauteur minimale */
+    min-height: 20vh;
     padding: 1rem;
     box-sizing: border-box;
     font-size: large;
 }
 
-section h1, section h2, section h3, p {
-    margin: 0.5rem 0; /* Réduction des marges */
+section h1,
+section h2,
+section h3,
+p {
+    margin: 0.5rem 0;
 }
 
 .big-title {
@@ -83,17 +82,15 @@ section h1, section h2, section h3, p {
     font-size: large;
 }
 
-/* Projets */
 .projets-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
-    grid-gap: 1rem; /* Espacement entre les widgets */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
     max-width: 1200px;
     background-color: #2a2a2a;
-    /*font-size: 1.5rem;*/
 }
 
 .projet-widget {
@@ -102,12 +99,12 @@ section h1, section h2, section h3, p {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    background-color: #333; /* Fond des widgets */
-    color: #f5f5f5; /* Couleur du texte */
+    background-color: #333;
+    color: #f5f5f5;
 }
 
 .projet-widget:hover {
-    transform: translateY(-5px); /* Légère élévation au survol */
+    transform: translateY(-5px);
     background-color: #444;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -118,11 +115,11 @@ section h1, section h2, section h3, p {
 }
 
 .projet-highlight {
-    grid-column: span 2; /* Occupe deux colonnes */
-    grid-row: 1; /* Place ce widget en haut */
-    transform: scale(0.8); /* Augmente légèrement la taille */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour plus d'impact */
-    transition: transform 0.3s, box-shadow 0.3s; /* Effet interactif */
+    grid-column: span 2;
+    grid-row: 1;
+    transform: scale(0.8);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
     background-color: #3a3a3a;
     color: #f5f5f5;
     font-size: 1.5rem;
@@ -131,126 +128,124 @@ section h1, section h2, section h3, p {
 .projet-highlight:hover {
     transform: scale(0.84);
     background-color: #4a4a4a;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Style spécifique pour les liens dans les widgets */
 .projet-widget a {
-    display: block; /* Permet de cliquer sur tout le widget */
-    text-decoration: none; /* Supprime le soulignement */
-    color: #f5f5f5;; /* Définit une couleur de texte personnalisée (noir ici) */
-    transition: color 0.3s, transform 0.3s; /* Ajoute une transition pour un effet interactif */
+    display: block;
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: color 0.3s, transform 0.3s;
 }
 
-/* Effet au survol */
 .projet-widget a:hover {
-    color: #f5f5f5;; /* Change la couleur du texte au survol (bleu ici, personnalise si besoin) */
+    color: #f5f5f5;
+    ;
 }
 
 .projet-widget b {
-    display: block; /* Permet de cliquer sur tout le widget */
-    text-decoration: none; /* Supprime le soulignement */
-    color: #f5f5f5; /* Définit une couleur de texte personnalisée (noir ici) */
-    transition: color 0.3s, transform 0.3s; /* Ajoute une transition pour un effet interactif */
+    display: block;
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: color 0.3s, transform 0.3s;
 }
 
-/* Effet au survol */
 .projet-widget b:hover {
-    color: #000; /* Change la couleur du texte au survol (bleu ici, personnalise si besoin) */
+    color: #000;
 }
 
-/* Style général pour la description */
+
 .projet-highlight-details {
-    font-size: 1.8rem; /* Taille du texte */
-    margin-top: 0.5rem; /* Espacement au-dessus */
-    color: #f5f5f5; /* Couleur par défaut */
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    color: #f5f5f5;
 }
 
-/* Couleur spécifique pour le moteur de jeu */
+
 .projet-highlight-details .engine {
-    color: #13fe00; /* Bleu pour Unity, par exemple */
-    font-weight: bold; /* Gras pour accentuer */
+    color: #13fe00;
+    font-weight: bold;
 }
 
-/* Couleur spécifique pour le langage de programmation */
+
 .projet-highlight-details .language {
-    color: #ff4d4d; /* Rouge pour C#, par exemple */
-    font-weight: bold; /* Gras pour accentuer */
+    color: #ff4d4d;
+    font-weight: bold;
 }
 
-/* Style général pour la description */
+
 .projet-details {
-    font-size: 1.2rem; /* Taille du texte */
-    margin-top: 0.35rem; /* Espacement au-dessus */
-    color: #f5f5f5; /* Couleur par défaut */
+    font-size: 1.2rem;
+    margin-top: 0.35rem;
+    color: #f5f5f5;
 }
 
-/* Couleur spécifique pour le moteur de jeu */
+
 .projet-details .engine {
-    color: #52bbf7; /* Bleu pour Unity, par exemple */
-    font-weight: bold; /* Gras pour accentuer */
+    color: #52bbf7;
+    font-weight: bold;
 }
 
 .projet-details .unity {
-    color: #13fe00; /* Bleu pour Unity, par exemple */
-    font-weight: bold; /* Gras pour accentuer */
+    color: #13fe00;
+    font-weight: bold;
 }
 
 .projet-details .godot {
-    color: #52bbf7; /* Bleu pour Unity, par exemple */
-    font-weight: bold; /* Gras pour accentuer */
+    color: #52bbf7;
+    font-weight: bold;
 }
 
-/* Couleur spécifique pour le langage de programmation */
+
 .projet-details .language {
-    color: #ff4d4d; /* Rouge pour C#, par exemple */
-    font-weight: bold; /* Gras pour accentuer */
+    color: #ff4d4d;
+    font-weight: bold;
 }
 
-/* Style général pour les liens du menu */
-.menu > li > a {
+
+.menu>li>a {
     text-decoration: none;
     padding: 1rem 1.5rem;
     color: #f5f5f5;
-    display: flex; /* Aligne tous les boutons de la même manière */
-    align-items: center; /* Centre verticalement le texte et les icônes (comme la flèche) */
-    justify-content: center; /* Centre horizontalement le texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 0.3s;
 }
 
-/* Flèche */
+
 .arrow {
-    font-size: 1.2rem; /* Taille de la flèche */
-    margin-left: 0.5rem; /* Espacement entre le texte et la flèche */
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
     color: #f5f5f5;
-    transition: transform 0.3s; /* Animation de rotation */
+    transition: transform 0.3s;
 }
 
-/* Rotation de la flèche au survol */
+
 .dropdown:hover .arrow {
-    transform: rotate(180deg); /* La flèche pointe vers le haut */
+    transform: rotate(180deg);
 }
 
-/* Menu principal */
+
 .menu {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
-    background-color: #1a1a1a; /* Fond du menu */
+    background-color: #1a1a1a;
     position: relative;
 }
 
-.menu > li {
+.menu>li {
     position: relative;
     margin: 0;
 }
 
-/* Menu déroulant */
+
 .dropdown-menu {
     list-style: none;
     position: absolute;
-    top: 100%; /* Positionné sous le bouton "Projets" */
+    top: 100%;
     left: 0;
     display: none;
     background-color: #2a2a2a;
@@ -273,7 +268,7 @@ section h1, section h2, section h3, p {
     background-color: #444;
 }
 
-/* Afficher le menu déroulant au survol */
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -307,19 +302,19 @@ a {
 }
 
 a:hover {
-    color: #00bcd4; /* Couleur bleu clair au survol */
+    color: #00bcd4;
 }
 
-/* Styles pour les listes */
+
 ul {
-    list-style-position:inside; /* Place les puces à l'intérieur du conteneur */
-    margin: 0; /* Supprime les marges par défaut */
-    padding-left: 1.5rem; /* Définit un espacement uniforme pour l'indentation */
+    list-style-position: inside;
+    margin: 0;
+    padding-left: 1.5rem;
 }
 
 li {
-    text-indent: 0; /* Assure que le texte ne soit pas décalé */
-    margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
+    text-indent: 0;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -332,24 +327,24 @@ main {
     min-height: 100vh;
     padding: 1rem;
     box-sizing: border-box;
-    margin-top: 60px; /* Compense la hauteur du header fixé */    
+    margin-top: 60px;
 }
 
-/* Vidéo : Centrée avec des marges équilibrées */
+
 video {
     width: 100%;
     max-width: 800px;
-    margin: 1rem auto; /* Centrage horizontal et réduction des marges */
+    margin: 1rem auto;
 }
 
-hr{
+hr {
     border: none;
     border-top: 1.5px solid #f5f5f5;
     margin: 2rem 0;
     width: 100%;
 }
 
-/* Footer */
+
 footer {
     background: #333;
     color: #fff;

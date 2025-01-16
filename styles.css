@@ -75,6 +75,10 @@ section h1, section h2, section h3, p {
     margin: 0.5rem 0; /* Réduction des marges */
 }
 
+.big-title {
+    font-size: 200%;
+}
+
 .about-me {
     font-size: large;
 }

@@ -78,6 +78,17 @@ p {
     font-size: 200%;
 }
 
+.overview-gif {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overview-gif > img {
+    width: 960px;
+    height: auto;
+}
+
 .about-me {
     font-size: large;
 }

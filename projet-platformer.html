@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joachim Legrand - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html"> <span>Joachim Legrand - Portfolio</span></a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Projects<span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projet-platformer.html">ReverSoul</a></li>
+                        <li><a href="projet-rush.html">Relaxed Rush</a></li>
+                        <li><a href="projet-sokoban.html">Rockoban</a></li>
+                        <li><a href="projet-obg.html">Blasting Cars</a></li>
+                        <li><a href="projet-shmup.html">Steam Crusher</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>ReverSoul</h1>
+        <p class="projet-details">
+            2D Platformer Game - 
+            <span class="unity">Unity</span> - <span class="language">C#</span> - 2025<br>
+            <span class="student-number-time">13 students - 2 months</span>
+        </p>
+        <video controls>
+            <source src="Videos/Moliterno Al Tartufo Trailer.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+        <section>
+            <p class="projet-description">
+                This project is my biggest game yet, as a student at ISART Digital Paris.<br>
+                I worked in a team of 4 Gameplay Programmers, 7 Game Artists and 2 Sound Designers.<br>
+                ReverSoul is a 2D platformer game where you play as Teyallo, the Aztec god of sacrifices.<br>
+                Teyallo comes to claim his temple back, which has been invaded by the god of the dead.<br>
+                Play through 2 levels where you control gravity, and fight the final boss in an epic ending!<br>
+            </p>
+            <h2>My Contributions</h2>
+            <ul class="projet-contributions">
+                <li> <span class="contribution-title">User Data Save & Leaderboard</span> <br><br>
+                    <span class="contribution-description">
+                        - Created an account system to save player progress in a JSON file<br>
+                    - Save elements such as collectibles, time elapsed and score<br>
+                    - Used data saved to create a leaderboard showing the best scores<br><br>
+                    </span>
+                </li>
+                <li> <span class="contribution-title">Player Physics & Animation Integration</span> <br><br>
+                    <span class="contribution-description">
+                        - Adapted player physics to implement gravity inversion<br>
+                        - Integrated 3D player animations using Unity tools<br><br>
+                    </span>
+                </li>
+                <li> <span class="contribution-title">Mobile Port</span> <br><br>
+                    <span class="contribution-description">
+                        - Adapted controls for the game to be playable on Android<br>
+                        - Created a joystick and buttons taking in account how much time you press it<br>
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p> Contact : <a href="mailto:joachimlegrand.pro@gmail.com">joachimlegrand.pro@gmail.com</a> | <a href="https://www.linkedin.com/in/joachim-legrand-193912334/" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Joachim Legrand </p>
+    </footer>
+</body>
+</html>

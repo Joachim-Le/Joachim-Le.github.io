@@ -178,6 +178,10 @@ p {
     font-weight: bold;
 }
 
+.projet-highlight-details .unity {
+    color: #13fe00;
+    font-weight: bold;
+}
 
 .projet-highlight-details .language {
     color: #ff4d4d;

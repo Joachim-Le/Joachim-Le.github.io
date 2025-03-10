@@ -1,7 +1,17 @@
+:root {
+    --bg-color: #2e2e2e;
+    --text-color: #cccccc;
+    --accent-color: #00bcd4;
+    --header-bg: #1a1a1a;
+    --widget-bg: #333;
+    --widget-hover: #444;
+}
+
 body {
-    background-color: #1a1a1a;
-    color: #f5f5f5;
-    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 60px;
@@ -23,7 +33,7 @@ header {
     justify-content: space-between;
     padding: 0 2rem;
     background-color: #1a1a1a;
-    color: #f5f5f5;
+    color: var(--header-bg);
     height: 60px;
 }
 
@@ -32,7 +42,6 @@ header {
     font-weight: bold;
     color: #f5f5f5;
 }
-
 header nav ul {
     list-style: none;
     padding: 0;
@@ -74,8 +83,25 @@ p {
     margin: 0.5rem 0;
 }
 
+#intro {
+    background: linear-gradient(135deg, #3a3a3a, #2e2e2e);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-color);
+  }
+
 .big-title {
-    font-size: 200%;
+    /* font-size: 200%; */
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .overview-gif {
@@ -103,6 +129,7 @@ p {
     max-width: 1200px;
     background-color: #2a2a2a;
 }
+
 
 .projet-widget {
     border: 1px solid #ddd;
@@ -299,16 +326,22 @@ p {
 }
 
 .projet-description {
+    line-height: 2;
+    margin-bottom: 1.5rem;
+}
+
+.contribution {
     margin-bottom: 1rem;
 }
 
 .contribution-title {
+    font-weight: bold;
     text-decoration: underline;
 }
 
 .contribution-description {
     text-decoration: none;
-    margin-left: 2rem;
+    padding-left: 2rem;
     display: block;
 }
 
@@ -317,7 +350,7 @@ a {
 }
 
 a:hover {
-    color: #00bcd4;
+    color: var(--accent-color);
 }
 
 

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -31,12 +32,16 @@
     </header>
 
     <main>
+        <div class="projet-title">
         <h1>Relaxed Rush</h1>
         <p class="projet-details">
             3D Puzzle Game - 
             <span class="unity">Unity</span> - <span class="language">C#</span> - 2024<br>
             <span class="student-number-time">1 student - 1½ month</span>
         </p>
+        </div>
+        
+        <div class="projet-video-description">
         <video controls>
             <source src="Videos/Walkthrough Relaxed Rush.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture vidéo.
@@ -47,9 +52,11 @@
                 It was the first project during my second year at ISART Digital.<br>
                 It's a 3D puzzle game where you place tiles on the ground to guide cubes from the start to the end of each level.<br>
             </p>
+        </div>
+        <div class="contributions">
             <h2>My Contributions</h2>
             <ul class="projet-contributions">
-                <li> <span class="contribution-title">Gameplay Programming</span> <br><br>
+                <li class="contribution"> <span class="contribution-title">Gameplay Programming</span> <br><br>
                     <span class="contribution-description">
                     - Recreated an existing game from scratch using Unity 3D<br>
                     - Coded all the gameplay, such as cube behavior and their reactions to the tiles and walls<br>
@@ -57,19 +64,20 @@
                     - Conceptualized the UX to be playable both on PC and Android smartphones/tablets<br><br>
                     </span>
                 </li>
-                <li> <span class="contribution-title">Level Design</span> <br><br>
+                <li class="contribution"> <span class="contribution-title">Level Design</span> <br><br>
                     <span class="contribution-description">
                         - Designed 3 new levels in addition to the ones from the original game<br>
                         - New levels difficulty varies from easy to hard<br><br>
                     </span>
                 </li>
-                <li> <span class="contribution-title">Game Feel and Juiciness</span> <br><br>
+                <li class="contribution"> <span class="contribution-title">Game Feel and Juiciness</span> <br><br>
                     <span class="contribution-description">
                         - Created multiple shaders to animate gameplay tiles<br>
                         - Made several particle effects to increase juiciness<br><br>
                     </span>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     
@@ -81,5 +89,7 @@
     <footer>
         <p>© 2025 Joachim Legrand </p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

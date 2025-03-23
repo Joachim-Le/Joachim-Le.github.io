@@ -331,19 +331,57 @@ p {
     margin-bottom: 1.5rem;
 }
 
+.description-list {
+    list-style: none;
+    text-align: justify;
+    background-color: #222;
+    border-radius: 12px;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.description-list li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+}
+
+.description-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("Icons/Icon_reversoul.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+  }
+
 .contribution {
-    margin-bottom: 1rem;
+    background-color: #222;
+    border-radius: 12px;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .contribution-title {
     font-weight: bold;
     text-decoration: underline;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
 }
 
 .contribution-description {
     text-decoration: none;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
     display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
 }
 
 .carousel {

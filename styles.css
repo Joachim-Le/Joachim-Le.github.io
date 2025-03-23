@@ -319,6 +319,11 @@ p {
     color: #f99910;
 }
 
+.main-icon {
+    max-width: 150px;
+    max-height: 150px;
+}
+
 .projet-contributions {
     font-size: large;
     text-align: left;

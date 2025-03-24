@@ -452,6 +452,35 @@ p {
     background-repeat: no-repeat;
 }
 
+.description-list-shmup {
+    list-style: none;
+    text-align: justify;
+    background-color: #222;
+    border-radius: 12px;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.description-list-shmup li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+}
+
+.description-list-shmup li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/rouage_icon_shmup.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
 .contribution {
     background-color: #222;
     border-radius: 12px;

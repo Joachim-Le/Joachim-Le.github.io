@@ -505,6 +505,156 @@ p {
     line-height: 2.1em;
 }
 
+.contribution-description-platf {
+    text-decoration: none;
+    /* padding-left: 2rem; */
+    display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
+    list-style: none;
+}
+
+.contribution-description-platf li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.contribution-description-platf li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/Icon_reversoul.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
+.contribution-description-rush {
+    text-decoration: none;
+    /* padding-left: 2rem; */
+    display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
+    list-style: none;
+}
+
+.contribution-description-rush li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.contribution-description-rush li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/cube_icon_green.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
+.contribution-description-sokoban {
+    text-decoration: none;
+    /* padding-left: 2rem; */
+    display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
+    list-style: none;
+}
+
+.contribution-description-sokoban li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.contribution-description-sokoban li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/diamond_disc_sokoban.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
+.contribution-description-obg {
+    text-decoration: none;
+    /* padding-left: 2rem; */
+    display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
+    list-style: none;
+}
+
+.contribution-description-obg li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.contribution-description-obg li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/car_blue_icon_OBG.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
+.contribution-description-shmup {
+    text-decoration: none;
+    /* padding-left: 2rem; */
+    display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
+    list-style: none;
+}
+
+.contribution-description-shmup li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.contribution-description-shmup li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/airship_icon_shmup.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
 .carousel {
     position: relative;
     width: 1080px;

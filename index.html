@@ -40,6 +40,20 @@
 
     <!-- <hr> -->
     
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="Videos/steam crusher trailer.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la lecture de la vidéo.
+        </video>
+        <div class="hero-overlay">
+          <h1>SCROLL DOWN TO SEE MORE</h1>
+          <a href="#intro" class="scroll-down">
+            &#x25BC; <!-- flèche vers le bas en Unicode -->
+          </a>
+        </div>
+      </section>
+      
+    
     <section id="intro">
         <div class="big-title">
             Joachim LEGRAND<br>
@@ -123,5 +137,12 @@
     </footer>
 
     <script src="main.js"></script>
+    <script>
+        document.querySelector('.scroll-down').addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          target.scrollIntoView({ behavior: 'smooth' });
+        });
+      </script>
 </body>
 </html>

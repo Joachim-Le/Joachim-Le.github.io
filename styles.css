@@ -394,6 +394,43 @@ p {
     background-repeat: no-repeat;
 }
 
+.description-list-pes {
+    list-style: none;
+    text-align: justify;
+    background-color: #222;
+    border-radius: 12px;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.description-list-pes li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+}
+
+.description-list-pes li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("Icons/Dragon_Ball_icon_PES.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+
+.bullets-pes li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: none;
+}
+
 .description-list-sokoban {
     list-style: none;
     text-align: justify;
@@ -561,6 +598,36 @@ p {
     width: 27px;
     height: 27px;
     background-image: url("Icons/cube_icon_green.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
+.contribution-description-pes {
+    text-decoration: none;
+    /* padding-left: 2rem; */
+    display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
+    list-style: none;
+}
+
+.contribution-description-pes li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.contribution-description-pes li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/Dragon_Ball_icon_PES.png");
     background-size: 27px 27px;
     background-repeat: no-repeat;
 }

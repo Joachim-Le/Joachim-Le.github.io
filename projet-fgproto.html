@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joachim Legrand - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html"> <span>Joachim Legrand - Portfolio</span></a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Projects<span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projet-platformer.html">ReverSoul</a></li>
+                        <li><a href="projet-rush.html">Relaxed Rush</a></li>
+                        <li><a href="projet-fgproto.html">3D Fighting Game Prototype</a></li>
+                        <li><a href="projet-sokoban.html">Rockoban</a></li>
+                        <li><a href="projet-obg.html">Blasting Cars</a></li>
+                        <li><a href="projet-shmup.html">Steam Crusher</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <img src="Icons/Icon_reversoul.png" class="main-icon"> -->
+        <div class="projet-title">
+        <h1>3D Fighting Game Prototype</h1>
+        <p class="projet-details">
+             
+            <span class="unity">Unity</span> - <span class="language">C#</span> - 2025<br>
+            <span class="student-number-time">1 student - 2 weeks</span>
+        </p>
+        </div>
+        
+        <div class="projet-video-description">
+        <video controls>
+            <source src="Videos/PES_Trailer.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+        <section>
+            <p class="projet-description">
+            <ul class="description-list-pes">
+                <li>This project is a 20-hour work made during my 2nd year at ISART.</li><br>
+                <li>It's a 3D Fighting Game Prototype with a heavy inspiration from <i>Dragon Ball Sparking Zero</i>.</li><br>
+                <li>I recreated features such as : <br>
+                    <ul class="bullets-pes">
+                        <li>Moving around the opponent</li>
+                        <li>Dashing</li>
+                        <li>Teleporting</li>
+                        <li>Shooting a Kamehameha, the iconic laser beam from <i>Dragon Ball</i> !</li>
+                    </ul></li>
+            </ul>
+            </p>
+        </div>
+        <div class="contributions">
+            <h2>My Contributions</h2>
+            <ul class="projet-contributions">
+                <li class="contribution"> <span class="contribution-title">3D Space Movements & Camera</span> <br><br>
+                    <span class="contribution-description-pes">
+                    <ul>
+                    <li>Coded player movements to always take in account where the enemy is.</li><br>
+                    <li>Implemented other classic fighting game movements.</li><br>
+                    <li>Managed the camera to give a satisfying feeling during dash.</li>
+                    </ul>
+                    </span>
+                </li>
+                <li class="contribution"> <span class="contribution-title">Effective Visual Effects</span> <br><br>
+                    <span class="contribution-description-pes">
+                    <ul>
+                        <li>Recreated the teleport effect from <i>Dragon Ball Z</i>.</li><br>
+                        <li>Designed shaders and particle effects for Kamehameha.</li><br>
+                        <li>Added speed effects during dash.</li>
+                    </ul>
+                    </span>
+                </li>
+            </ul>
+        
+            <div class="carousel">
+                <h2>Gallery</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel-images">
+                  <img src="Pictures/PES/Screenshot PES (1).png" alt="Image 1" class="active">
+                  <img src="Pictures/PES/Screenshot PES (2).png" alt="Image 2">
+                  <img src="Pictures/PES/Screenshot PES (3).png" alt="Image 3">
+                  <img src="Pictures/PES/Screenshot PES (4).png" alt="Image 4">
+                  <img src="Pictures/PES/Screenshot PES (5).png" alt="Image 5">
+                  <img src="Pictures/PES/Screenshot PES (6).png" alt="Image 6">
+                  <img src="Pictures/PES/Screenshot PES (7).png" alt="Image 7">
+                  <img src="Pictures/PES/Screenshot PES (8).png" alt="Image 8">
+                  <img src="Pictures/PES/Screenshot PES (9).png" alt="Image 9">
+                </div>
+            </div>
+                <button class="carousel-prev">&lt;</button>
+                <button class="carousel-next">&gt;</button>
+            </div>
+        </div>
+        </section>
+    </main>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:joachimlegrand.pro@gmail.com">joachimlegrand.pro@gmail.com</a> | <a href="https://www.linkedin.com/in/joachim-legrand-193912334/" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Joachim Legrand </p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="carousel.js"></script>
+</body>
+</html>

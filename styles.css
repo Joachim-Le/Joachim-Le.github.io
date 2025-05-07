@@ -283,6 +283,15 @@ p {
     margin: 0;
 }
 
+.header-button:hover {
+    background-color: #444;
+    transition: background-color 0.2s;
+}
+
+.dropdown:hover{
+    background-color: #444;
+    transition: background-color 0.2s;
+}
 
 .dropdown-menu {
     list-style: none;

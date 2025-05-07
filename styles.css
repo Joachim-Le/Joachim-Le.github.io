@@ -296,23 +296,52 @@ p {
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 9999;
+    max-height: 60vh;        /* 60% de la hauteur de la fenêtre */
+    overflow-y: auto;        /* scroll si trop long */
+    scrollbar-width: thin;
 }
 
 .dropdown-menu li a {
     text-decoration: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     color: #f5f5f5;
-    display: block;
-    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu li + li a {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-menu li:last-child a {
+    border-bottom: none;
 }
 
 .dropdown-menu li a:hover {
     background-color: #444;
 }
 
+.dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb {
+background: rgba(255,255,255,0.3);
+border-radius: 3px;
+}
+.dropdown-menu::-webkit-scrollbar-track {
+background: transparent;
+}
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.dropdown-menu-icon {
+    width: 23px;             /* ajustable */
+    height: 23px;            /* ajustable */
+    margin-right: 0.4rem;   /* espace entre l'icône et le texte */
+    flex-shrink: 0;          /* ne pas rétrécir l’icône */
 }
 
 .student-number-time {
@@ -361,6 +390,35 @@ p {
     width: 25px;
     height: 25px;
     background-image: url("Icons/Icon_reversoul.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+
+.description-list-f2p {
+    list-style: none;
+    text-align: justify;
+    background-color: #222;
+    border-radius: 12px;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.description-list-f2p li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+}
+
+.description-list-f2p li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("Icons/victoire_icon_F2P.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
 }
@@ -572,6 +630,36 @@ p {
     background-repeat: no-repeat;
 }
 
+.contribution-description-f2p {
+    text-decoration: none;
+    /* padding-left: 2rem; */
+    display: block;
+    margin: 0;
+    padding-left: 1.2em;
+    line-height: 2.1em;
+    list-style: none;
+}
+
+.contribution-description-f2p li{
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.contribution-description-f2p li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("Icons/victoire_icon_F2P.png");
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+}
+
 .contribution-description-rush {
     text-decoration: none;
     /* padding-left: 2rem; */
@@ -734,8 +822,8 @@ p {
   .carousel-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 ratio */
-    background-color: var(--bg-color); /* Couleur de fond pour combler les espaces */
+    padding-top: 56.25%;
+    background-color: var(--bg-color);
     overflow: visible;
   }
   
@@ -813,6 +901,36 @@ p {
     right: 10px;
   }
 
+/* Taille du conteneur un peu plus étroite pour les images portrait */
+.carousel.portrait .carousel-wrapper {
+    /* par exemple 60% de la largeur du carousel parent */
+    width: 60%;  
+    margin: 0 auto; /* centrer la zone d'images */
+  }
+  
+  /* Ajuster la largeur totale des images (pour prev/next previews) */
+  .carousel.portrait .carousel-images {
+    width: 200%; /* à tester : laisse un peu de place à 50% + 50% */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Repositionner les flèches plus près du centre de l’image portrait */
+  .carousel.portrait .carousel-prev {
+    left: 32%;   /* à ajuster : 20% de la largeur du carousel parent */
+  }
+  .carousel.portrait .carousel-next {
+    right: 32%;  /* idem */
+  }
+  
+  /* Facultatif : réduire la taille des flèches pour ne pas surcharger */
+  .carousel.portrait .carousel-prev,
+  .carousel.portrait .carousel-next {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+
 a {
     color: #f5f5f5;
 }
@@ -852,6 +970,25 @@ video {
     max-width: 800px;
     margin: 1rem auto;
 }
+
+.video-portrait {
+    /* Option A : fixer une largeur maximale et laisser la hauteur s'ajuster */
+    /*max-width: 300px;   /* ou tout autre valeur adaptée */
+    /*width: 100%;        /* prend 100% de son conteneur jusqu'à max-width */
+    /*height: auto;       /* conserve le ratio portrait */
+  
+    /* Option B : fixer une hauteur maximale et laisser la largeur s'ajuster */
+    max-height: 550px;
+       height: 100%;
+       width: auto;
+  
+    /* Si besoin, centrer la vidéo dans son conteneur */
+    display: block;
+    margin: 1rem auto;  /* 1rem en haut/bas, centré horizontalement */
+    
+    /* Pour que l’élément ne déborde pas */
+    object-fit: contain; /* ou cover selon l’effet souhaité */
+  }
 
 hr {
     border: none;

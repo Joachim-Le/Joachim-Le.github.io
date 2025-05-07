@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joachim Legrand - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html"> <span>Joachim Legrand - Portfolio</span></a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Projects<span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projet-platformer.html">
+                            <img class="dropdown-menu-icon" src="Icons/Icon_reversoul.png" alt="ReverSoul icon">ReverSoul</a></li>
+                        <li><a href="projet-rush.html">
+                            <img class="dropdown-menu-icon" src="Icons/cube_icon_green.png" alt="Rush icon">Relaxed Rush</a></li>
+                        <li><a href="projet-freetoplay.html">
+                            <img class="dropdown-menu-icon" src="Icons/victoire_icon_F2P.png" alt="F2P icon">All Inn</a></li>
+                        <li><a href="projet-fgproto.html">
+                            <img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="PES icon">3D Fighting Game Prototype</a></li>
+                        <li><a href="projet-sokoban.html">
+                            <img class="dropdown-menu-icon" src="Icons/golden_disc_sokoban.png" alt="Rockoban icon">Rockoban</a></li>
+                        <li><a href="projet-obg.html">
+                            <img class="dropdown-menu-icon" src="Icons/car_icon_OBG.png" alt="OBG icon">Blasting Cars</a></li>
+                        <li><a href="projet-shmup.html">
+                            <img class="dropdown-menu-icon" src="Icons/rouage_icon_shmup.png" alt="Shmup icon">Steam Crusher</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <img src="Icons/Icon_reversoul.png" class="main-icon"> -->
+        <div class="projet-title">
+        <h1>All Inn</h1>
+        <p class="projet-details">
+            Mobile Card Game - 
+            <span class="unity">Unity</span> - <span class="language">C#</span> - 2025<br>
+            <span class="student-number-time">12 students - 1 month</span>
+        </p>
+        </div>
+        
+        <div class="projet-video-description">
+        <video class="video-portrait" controls>
+            <source src="Videos/All Inn Long Trailer.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+        <section>
+            <p class="projet-description">
+            <ul class="description-list-f2p">
+                <li>This project was made during my second year at ISART Digital.</li><br>
+                <li>I worked in a team of 5 Gameplay Programmers, 5 Game Designers and 2 Sound Designers.</li><br>
+                <li>All Inn is a card game that takes place in an inn.<br>
+                Align your cards with your opponent's to have a higher value and win the fight.<br>
+                Visit the shop to get new cards with powerful effects,<br>
+                and perks that will make your run unique!</li>
+            </ul>
+            </p>
+        </div>
+        <div class="contributions">
+            <h2>My Contributions</h2>
+            <ul class="projet-contributions">
+                <li class="contribution"> <span class="contribution-title">Shop Creation</span> <br><br>
+                    <span class="contribution-description-f2p">
+                    <ul>
+                    <li>Created the shop visited between each match.</li><br>
+                    <li>Coded boosters containing cards from a random pool, as well as random perks.</li>
+                    </ul>
+                    </span>
+                </li>
+                <li class="contribution"> <span class="contribution-title">Card and Perk Effects Dynamic Display</span> <br><br>
+                    <span class="contribution-description-f2p">
+                    <ul>
+                        <li>Created a popup to show card and perk effects, with icons and text<br>
+                            changing dynamically.</li><br>
+                        <li>Used Unity's localization tables to get texts from both English and French.</li><br>
+                        <li>Integrated 3D drink models that show which perks you have earned.</li>
+                    </ul>
+                    </span>
+                </li>
+            </ul>
+        
+            <div class="carousel portrait">
+                <h2>Gallery</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel-images">
+                  <img src="Pictures/F2P/All Inn Screenshot (1).jpg" alt="Image 1" class="active">
+                  <img src="Pictures/F2P/All Inn Screenshot (2).jpg" alt="Image 2">
+                  <img src="Pictures/F2P/All Inn Screenshot (3).jpg" alt="Image 3">
+                  <img src="Pictures/F2P/All Inn Screenshot (4).jpg" alt="Image 4">
+                  <img src="Pictures/F2P/All Inn Screenshot (5).jpg" alt="Image 5">
+                  <img src="Pictures/F2P/All Inn Screenshot (6).jpg" alt="Image 6">
+                </div>
+            </div>
+                <button class="carousel-prev">&lt;</button>
+                <button class="carousel-next">&gt;</button>
+            </div>
+        </div>
+        </section>
+    </main>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:joachimlegrand.pro@gmail.com">joachimlegrand.pro@gmail.com</a> | <a href="https://www.linkedin.com/in/joachim-legrand-193912334/" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Joachim Legrand </p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="carousel.js"></script>
+</body>
+</html>

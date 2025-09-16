@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joachim Legrand - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-
+    <div class="container px-lg-5" data-include="header"></div>
+    <!-- <header>
+        
         <div class="logo">
             <a href="index.html"> <span>Joachim Legrand - Portfolio</span></a>
         </div>
-
+        
         <nav>
             <ul class="menu">
                 <li class="header-button"><a href="index.html">Home</a></li>
@@ -38,9 +40,10 @@
                 </li>
             </ul>
         </nav>
-    </header>
-
+    </header> -->
+    
     <main>
+        <!-- <img src="Icons/Icon_reversoul.png" class="main-icon"> -->
         <div class="projet-title">
         <h1>Blasting Cars</h1>
         <p class="projet-details">
@@ -50,66 +53,117 @@
         </p>
         </div>
         
-        <div class="projet-video-description">
-        <video controls>
+        <!-- <video controls>
             <source src="Videos/Blasting_Cars_Video.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture vidéo.
-        </video>
-        <section>
-            <p class="projet-description">
-            <ul class="description-list-obg">
-                <li>This project is my third work as a student at ISART Digital Paris.</li><br>
-                <li>Blasting Cars is a 1v1 racing game to play against a friend!<br>
-                    It's a one button game that aims to be fun and easy to play.</li><br>
-                <li>Hold to accelerate, but beware of overheating!<br>
-                    You can cool down your car near a &#128167;water spot,<br>
-                    and double tap to send a &#128293;fireball to your opponent!</li>
-            </ul>
-            </p>
-        </div>
-        <div class="contributions">
-            <h2>My Contributions</h2>
-            <ul class="projet-contributions">
-                <li class="contribution"> <span class="contribution-title">Gameplay Programming</span> <br><br>
-                    <span class="contribution-description-obg">
-                    <ul>
-                         Coded all the game, including :<br>
-                    <li>Player inputs management for different actions(Simple Press, Double Press, Hold).</li><br>
-                    <li>Car movement and acceleration.</li><br>
-                    <li>Sound integration.</li>
-                    </ul>
-                    </span>
-                </li>
-                <li class="contribution"> <span class="contribution-title">Game Design</span> <br>
-                    <span class="contribution-description-obg">
-                    <ul>
-                        <li>Designed gameplay mechanics to interact with the opponent.</li><br>
-                        <li>Conceptualized an easy to play game.</li>
-                    </ul>
-                    </span>
-                </li>
-            </ul>
+        </video> -->
         
-            <div class="carousel">
-                <h2>Gallery</h2>
-            <div class="carousel-wrapper">
-                <div class="carousel-images">
-                  <img src="Pictures/OBG/1_TitleCard.png" alt="Image 1" class="active">
-                  <img src="Pictures/OBG/2_TutoScreen.png" alt="Image 2">
-                  <img src="Pictures/OBG/3_GO_Begin.png" alt="Image 3">
-                  <img src="Pictures/OBG/4_IntoRace.png" alt="Image 4">
-                  <img src="Pictures/OBG/5_Fireball.png" alt="Image 5">
-                  <img src="Pictures/OBG/6_Explosion.png" alt="Image 6">
-                  <img src="Pictures/OBG/7_BeforeWaterPoint.png" alt="Image 7">
-                  <img src="Pictures/OBG/8_AfterWaterPoint.png" alt="Image 8">
-                  <img src="Pictures/OBG/9_WinScreen.png" alt="Image 9">
+        <div class="container py-3 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/3hQESha-124?si=fKsKuTif4FJIWyFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="h-100 w-100"></iframe>
+                    </div>
                 </div>
             </div>
-                <button class="carousel-prev">&lt;</button>
-                <button class="carousel-next">&gt;</button>
+        </div>
+        
+        <div class="container px-0 px-lg-5">
+            <ul class="description-list-pes ps-0">
+                <li class="px-2 pt-2"><img class="dropdown-menu-icon" src="Icons/car_icon_OBG.png" alt="ReverSoul icon">This project is my third work as a student at ISART Digital Paris.</li>
+                <li class="px-2"><img class="dropdown-menu-icon" src="Icons/car_icon_OBG.png" alt="ReverSoul icon">Blasting Cars is a 1v1 racing game to play against a friend!</li>
+                <li class="px-2"><img class="dropdown-menu-icon" src="Icons/car_icon_OBG.png" alt="ReverSoul icon">It's a one button game that aims to be fun and easy to play.</li>
+                <li class="px-2"><img class="dropdown-menu-icon" src="Icons/car_icon_OBG.png" alt="ReverSoul icon">Hold to accelerate, but beware of overheating!</li>
+                <li class="px-2"><img class="dropdown-menu-icon" src="Icons/car_icon_OBG.png" alt="ReverSoul icon">Cool down your car near a &#128167;water spot,</li>
+                <li class="px-2 pb-2"><img class="dropdown-menu-icon" src="Icons/car_icon_OBG.png" alt="ReverSoul icon">and double tap to send a &#128293;fireball to your opponent!</li>
+            </ul>
+        </div>
+        <div class="container px-0 px-lg-5">
+            <h2>My Contributions</h2>
+            <!-- <ul class="projet-contributions"> -->
+            <ul class="pt-3 px-0">
+                <li class="contribution"> <span class="contribution-title">Gameplay Programming</span>
+                    <span class="">
+                    <ul class="mt-3 pb-1 ps-0 bullets-pes">
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/car_blue_icon_OBG.png" alt="ReverSoul icon">Player inputs management for different actions(Simple Press, Double Press, Hold).</li>
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/car_blue_icon_OBG.png" alt="ReverSoul icon">Car movement and acceleration.</li>
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/car_blue_icon_OBG.png" alt="ReverSoul icon">Sound integration.</li>
+                    </ul>
+                    </span>
+                </li>
+                <li class="contribution mt-3"> <span class="contribution-title">Game Design</span>
+                    <span class="">
+                    <ul class="mt-3 pb-1 ps-0 bullets-pes">
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/car_blue_icon_OBG.png" alt="ReverSoul icon">Designed gameplay mechanics to interact with the opponent.</li>
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/car_blue_icon_OBG.png" alt="ReverSoul icon">Conceptualized an easy to play game.</li>
+                    </ul>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="container px-lg-5 px-0">
+        <h2 class="pt-3 pt-lg-5">Gallery</h2>
+        <!-- CAROUSEL MANO -->
+        <!-- <div class="carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-images">
+                <img src="Pictures/PES/Screenshot PES (1).png" alt="Image 1" class="active">
+                <img src="Pictures/PES/Screenshot PES (2).png" alt="Image 2">
+                <img src="Pictures/PES/Screenshot PES (3).png" alt="Image 3">
+                <img src="Pictures/PES/Screenshot PES (4).png" alt="Image 4">
+                <img src="Pictures/PES/Screenshot PES (5).png" alt="Image 5">
+                <img src="Pictures/PES/Screenshot PES (6).png" alt="Image 6">
+                <img src="Pictures/PES/Screenshot PES (7).png" alt="Image 7">
+                <img src="Pictures/PES/Screenshot PES (8).png" alt="Image 8">
+                <img src="Pictures/PES/Screenshot PES (9).png" alt="Image 9">
             </div>
         </div>
-        </section>
+            <button class="carousel-prev">&lt;</button>
+            <button class="carousel-next">&gt;</button>
+        </div> -->
+        <!-- FIN CAROUSEL MANO -->
+        <!-- CAROUSEL BS -->
+        <div id="carouselExampleControls" class="carousel slide w-100 mx-auto" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="Pictures/OBG/1_TitleCard.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/2_TutoScreen.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/3_GO_Begin.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/4_IntoRace.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/5_Fireball.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/6_Explosion.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/7_BeforeWaterPoint.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/8_AfterWaterPoint.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/OBG/9_WinScreen.png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- FIN CAROUSEL BS -->
+    </div>
     </main>
     
     <section id="contact">
@@ -122,6 +176,8 @@
     </footer>
     
     <script src="main.js"></script>
-    <script src="carousel.js"></script>
+    <!-- <script src="carousel.js"></script> -->
+    <script src="htmlincluder.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

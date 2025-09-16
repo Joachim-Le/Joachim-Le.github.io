@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joachim Legrand - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="container px-lg-5" data-include="header"></div>
+    <!-- <header>
         
         <div class="logo">
             <a href="index.html"> <span>Joachim Legrand - Portfolio</span></a>
         </div>
-
+        
         <nav>
             <ul class="menu">
                 <li class="header-button"><a href="index.html">Home</a></li>
@@ -38,7 +40,7 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     
     <main>
         <!-- <img src="Icons/Icon_reversoul.png" class="main-icon"> -->
@@ -51,69 +53,120 @@
         </p>
         </div>
         
-        <div class="projet-video-description">
-        <video controls>
+        <!-- <video controls>
             <source src="Videos/PES_Trailer.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture vidéo.
-        </video>
-        <section>
-            <p class="projet-description">
-            <ul class="description-list-pes">
-                <li>This project is a 20-hour work made during my 2nd year at ISART.</li><br>
-                <li>It's a 3D Fighting Game Prototype with a heavy inspiration from <i>Dragon Ball Sparking Zero</i>.</li><br>
-                <li>I recreated features such as : <br>
-                    <ul class="bullets-pes">
-                        <li>Moving around the opponent</li>
-                        <li>Dashing</li>
-                        <li>Teleporting</li>
-                        <li>Shooting a Kamehameha, the iconic laser beam from <i>Dragon Ball</i> !</li>
-                    </ul></li>
-            </ul>
-            </p>
-        </div>
-        <div class="contributions">
-            <h2>My Contributions</h2>
-            <ul class="projet-contributions">
-                <li class="contribution"> <span class="contribution-title">3D Space Movements & Camera</span> <br><br>
-                    <span class="contribution-description-pes">
-                    <ul>
-                    <li>Coded player movements to always take in account where the enemy is.</li><br>
-                    <li>Implemented other classic fighting game movements.</li><br>
-                    <li>Managed the camera to give a satisfying feeling during dash.</li>
-                    </ul>
-                    </span>
-                </li>
-                <li class="contribution"> <span class="contribution-title">Effective Visual Effects</span> <br><br>
-                    <span class="contribution-description-pes">
-                    <ul>
-                        <li>Recreated the teleport effect from <i>Dragon Ball Z</i>.</li><br>
-                        <li>Designed shaders and particle effects for Kamehameha.</li><br>
-                        <li>Added speed effects during dash.</li>
-                    </ul>
-                    </span>
-                </li>
-            </ul>
-        
-            <div class="carousel">
-                <h2>Gallery</h2>
-            <div class="carousel-wrapper">
-                <div class="carousel-images">
-                  <img src="Pictures/PES/Screenshot PES (1).png" alt="Image 1" class="active">
-                  <img src="Pictures/PES/Screenshot PES (2).png" alt="Image 2">
-                  <img src="Pictures/PES/Screenshot PES (3).png" alt="Image 3">
-                  <img src="Pictures/PES/Screenshot PES (4).png" alt="Image 4">
-                  <img src="Pictures/PES/Screenshot PES (5).png" alt="Image 5">
-                  <img src="Pictures/PES/Screenshot PES (6).png" alt="Image 6">
-                  <img src="Pictures/PES/Screenshot PES (7).png" alt="Image 7">
-                  <img src="Pictures/PES/Screenshot PES (8).png" alt="Image 8">
-                  <img src="Pictures/PES/Screenshot PES (9).png" alt="Image 9">
+        </video> -->
+        <div class="container py-3 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/nOP9PbgYTnA?si=qnq2hNYU9CQVC1Uj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="h-100 w-100"></iframe>
+                    </div>
                 </div>
             </div>
-                <button class="carousel-prev">&lt;</button>
-                <button class="carousel-next">&gt;</button>
+        </div>
+        
+        <div class="container px-0 px-lg-5">
+            <ul class="description-list-pes ps-0">
+                <li class="px-2 pt-2">This project is a 20-hour work made during my 2nd year at ISART.</li>
+                <li class="px-2">It's a 3D Fighting Game Prototype with a heavy inspiration from <i>Dragon Ball Sparking Zero</i>.</li>
+                <li class="px-2">I recreated features such as :
+                    <ul class="bullets-pes ps-0 pt-1">
+                        <li><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Moving around the opponent</li>
+                        <li><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Dashing</li>
+                        <li><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Teleporting</li>
+                        <li class="pb-2"><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Shooting a Kamehameha, the iconic laser beam from <i>Dragon Ball</i> !</li>
+                    </ul></li>
+            </ul>
+        </div>
+        <div class="container px-0 px-lg-5">
+            <h2>My Contributions</h2>
+            <!-- <ul class="projet-contributions"> -->
+            <ul class="pt-3 px-0">
+                <li class="contribution"> <span class="contribution-title">3D Space Movements & Camera</span>
+                    <span class="">
+                    <ul class="mt-3 pb-1 ps-0 bullets-pes">
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Coded player movements to always take in account where the enemy is.</li>
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Implemented other classic fighting game movements.</li>
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Managed the camera to give a satisfying feeling during dash.</li>
+                    </ul>
+                    </span>
+                </li>
+                <li class="contribution mt-3"> <span class="contribution-title">Effective Visual Effects</span>
+                    <span class="">
+                    <ul class="mt-3 pb-1 ps-0 bullets-pes">
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Recreated the teleport effect from <i>Dragon Ball Z</i>.</li>
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Designed shaders and particle effects for Kamehameha.</li>
+                        <li class="pt-1"><img class="dropdown-menu-icon" src="Icons/Dragon_Ball_icon_PES.png" alt="ReverSoul icon">Added speed effects during dash.</li>
+                    </ul>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="container px-lg-5 px-0">
+        <h2 class="pt-3 pt-lg-5">Gallery</h2>
+        <!-- CAROUSEL MANO -->
+        <!-- <div class="carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-images">
+                <img src="Pictures/PES/Screenshot PES (1).png" alt="Image 1" class="active">
+                <img src="Pictures/PES/Screenshot PES (2).png" alt="Image 2">
+                <img src="Pictures/PES/Screenshot PES (3).png" alt="Image 3">
+                <img src="Pictures/PES/Screenshot PES (4).png" alt="Image 4">
+                <img src="Pictures/PES/Screenshot PES (5).png" alt="Image 5">
+                <img src="Pictures/PES/Screenshot PES (6).png" alt="Image 6">
+                <img src="Pictures/PES/Screenshot PES (7).png" alt="Image 7">
+                <img src="Pictures/PES/Screenshot PES (8).png" alt="Image 8">
+                <img src="Pictures/PES/Screenshot PES (9).png" alt="Image 9">
             </div>
         </div>
-        </section>
+            <button class="carousel-prev">&lt;</button>
+            <button class="carousel-next">&gt;</button>
+        </div> -->
+        <!-- FIN CAROUSEL MANO -->
+        <!-- CAROUSEL BS -->
+        <div id="carouselExampleControls" class="carousel slide w-100 mx-auto" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="Pictures/PES/Screenshot PES (1).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (2).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (3).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (4).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (5).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (6).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (7).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (8).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="Pictures/PES/Screenshot PES (9).png" class="img-fluid mx-auto carousel-img rounded" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- FIN CAROUSEL BS -->
+    </div>
     </main>
     
     <section id="contact">
@@ -124,8 +177,10 @@
     <footer>
         <p>© 2025 Joachim Legrand </p>
     </footer>
-
+    
     <script src="main.js"></script>
-    <script src="carousel.js"></script>
+    <!-- <script src="carousel.js"></script> -->
+    <script src="htmlincluder.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

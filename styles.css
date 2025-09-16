@@ -10,11 +10,10 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* font-family: Arial, sans-serif; */
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 0px;
     line-height: 1.4;
 }
 
@@ -71,7 +70,7 @@ section {
     align-items: center;
     text-align: center;
     min-height: 20vh;
-    padding: 1rem;
+    /* padding: 1rem; */
     box-sizing: border-box;
     font-size: large;
 }
@@ -84,23 +83,23 @@ p {
 }
 
 #intro {
-    background: linear-gradient(135deg, #3a3a3a, #2e2e2e);
+    /* background: linear-gradient(135deg, #3a3a3a, #2e2e2e); */
     padding: 3rem 1rem;
     text-align: center;
 }
 
 .intro-text {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; */
     color: var(--text-color);
   }
 
 .big-title {
     /* font-size: 200%; */
-    font-size: 3rem;
+    /* font-size: 3rem;
     letter-spacing: 1px;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; */
     color: var(--text-color);
 }
 
@@ -149,24 +148,8 @@ p {
 
 .projet-widget img {
     width: 100%;
+    aspect-ratio: 16 / 9;
     height: auto;
-}
-
-.projet-highlight {
-    grid-column: span 2;
-    grid-row: 1;
-    transform: scale(0.8);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #3a3a3a;
-    color: #f5f5f5;
-    font-size: 1.5rem;
-}
-
-.projet-highlight:hover {
-    transform: scale(0.84);
-    background-color: #4a4a4a;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .projet-widget a {
@@ -192,6 +175,22 @@ p {
     color: #000;
 }
 
+.projet-highlight {
+    grid-column: span 2;
+    grid-row: 1;
+    transform: scale(0.8);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #3a3a3a;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+}
+
+.projet-highlight:hover {
+    transform: scale(0.84);
+    background-color: #4a4a4a;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
 
 .projet-highlight-details {
     font-size: 1.8rem;
@@ -215,6 +214,19 @@ p {
     font-weight: bold;
 }
 
+.csharp {
+    color: #ff4d4d;
+}
+
+.unity {
+    color: #13fe00;
+    /* font-weight: bold; */
+}
+
+.godot {
+    color: #52bbf7;
+    /* font-weight: bold; */
+}
 
 .projet-details {
     font-size: 1.2rem;
@@ -347,10 +359,10 @@ background: transparent;
 }
 
 .dropdown-menu-icon {
-    width: 23px;             /* ajustable */
-    height: 23px;            /* ajustable */
-    margin-right: 0.4rem;   /* espace entre l'icône et le texte */
-    flex-shrink: 0;          /* ne pas rétrécir l’icône */
+    width: 23px;
+    height: 23px;
+    margin-right: 0.4rem;
+    flex-shrink: 0;
 }
 
 .student-number-time {
@@ -365,13 +377,13 @@ background: transparent;
 .projet-contributions {
     font-size: large;
     text-align: left;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     list-style: none;
 }
 
 .projet-description {
     line-height: 2;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .description-list-platf {
@@ -462,16 +474,19 @@ background: transparent;
 }
 
 .description-list-pes {
-    list-style: none;
+    /*
     text-align: justify;
-    background-color: #222;
+    
     border-radius: 12px;
     padding: 1.2em;
-    margin-bottom: 1em;
+    margin-bottom: 1em; */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #222;
+    list-style: none;
+    text-align: justify;
 }
 
-.description-list-pes li{
+/* .description-list-pes li{
     position: relative;
     margin-bottom: 1.2rem;
     padding-left: 28px;
@@ -488,14 +503,15 @@ background: transparent;
     background-image: url("Icons/Dragon_Ball_icon_PES.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
-}
+} */
 
-.bullets-pes li::before {
-    content: "";
+.bullets-pes{
+    /* content: "";
     position: absolute;
     left: 0;
     top: 0;
-    background-image: none;
+    background-image: none; */
+    list-style: none;
 }
 
 .description-list-sokoban {
@@ -587,16 +603,16 @@ background: transparent;
 
 .contribution {
     background-color: #222;
-    border-radius: 12px;
-    padding: 1.2em;
-    margin-bottom: 1em;
+    /* border-radius: 12px; */
+    /* padding: 1.2em;
+    margin-bottom: 1em; */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .contribution-title {
     font-weight: bold;
     text-decoration: underline;
-    margin-bottom: 0.5em;
+    /* margin-bottom: 0.5em; */
     font-size: 1.2em;
 }
 
@@ -705,27 +721,27 @@ background: transparent;
     display: block;
     margin: 0;
     padding-left: 1.2em;
-    line-height: 2.1em;
+    /* line-height: 2.1em; */
     list-style: none;
 }
 
 .contribution-description-pes li{
     position: relative;
-    margin-bottom: 1.2rem;
+    /*   */
     padding-left: 28px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     list-style: none;
 }
 
 .contribution-description-pes li::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 0;
-    width: 27px;
-    height: 27px;
+    width: 23px;
+    height: 23px;
     background-image: url("Icons/Dragon_Ball_icon_PES.png");
-    background-size: 27px 27px;
+    background-size: 23px 23px;
     background-repeat: no-repeat;
 }
 
@@ -1061,6 +1077,69 @@ footer {
     text-decoration: none;
     animation: bounce 2s infinite;
   }
+  
+  .bg-light{
+    background-color: #1a1a1a !important;
+    color: var(--text-color) !important;
+  }
+  
+  .brand-link:hover{
+    color: var(--accent-color) !important;
+  }
+  
+  .dropdown-item-boot:hover{
+    color: var(--accent-color) !important;
+}
+  
+/* icone en elle-même (SVG en background) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 5rem;   /* taille icône */
+  height: 5rem;
+  background-size: 100% 100%; /* éviter qu'elle s'étire */
+}
+
+/* zone cliquable autour (garde une zone large mais icône plus petite) */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3.2rem;      /* zone tactile */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-img{
+    /* max-height:350px; 
+    max-width:100%; 
+    width:auto; 
+    height:auto; */
+    max-height:500px; 
+    width:auto; 
+    max-width:100%;
+}
+  
+/* responsive : icônes plus petites sur petits écrans */
+@media (max-width: 576px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+    background-size: contain;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3rem;
+  }
+
+.carousel-img{
+    /* max-height:350px; 
+    max-width:100%; 
+    width:auto; 
+    height:auto; */
+    height:250px; 
+    width:auto; 
+    max-width:100%;
+}
+}
   
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {

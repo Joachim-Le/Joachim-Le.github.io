@@ -228,6 +228,11 @@ p {
     /* font-weight: bold; */
 }
 
+.htmlcssjs {
+    color: #f6e605;
+    font-weight: bold;
+}
+
 .projet-details {
     font-size: 1.2rem;
     margin-top: 0.35rem;

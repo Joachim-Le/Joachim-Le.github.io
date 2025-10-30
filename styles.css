@@ -370,6 +370,16 @@ background: transparent;
     flex-shrink: 0;
 }
 
+.itchio-button {
+    width: auto;
+    height: 40px;
+}
+
+.itchio-button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
 .student-number-time {
     color: #f99910;
 }

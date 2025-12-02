@@ -227,6 +227,10 @@ p {
     /* font-weight: bold; */
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
 .htmlcssjs {
     color: #f6e605;
     font-weight: bold;

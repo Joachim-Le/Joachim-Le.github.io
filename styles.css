@@ -217,8 +217,17 @@ p {
     color: #ff4d4d;
 }
 
+.blueprint {
+    color: #00f7ff;
+}
+
 .unity {
     color: #13fe00;
+    /* font-weight: bold; */
+}
+
+.unreal {
+    color: #e1ff01;
     /* font-weight: bold; */
 }
 
@@ -1135,6 +1144,21 @@ footer {
     max-width:100%;
 }
   
+.img-fluid {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.white{
+    color: var(--text-color);
+}
+
+@media (max-width: 767.98px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
 /* responsive : icônes plus petites sur petits écrans */
 @media (max-width: 576px) {
   .carousel-control-prev-icon,
